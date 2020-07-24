@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_settings"
+    tools:context=".SettingsActivity">
+    <include android:id="@+id/header" layout="@layout/toolbar"/>
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_below="@id/header"
+        android:text="Login / Signup"
+        android:textColor="#ffffff"
+        android:background="@drawable/shape_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:id="@+id/open_wallet_rl"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView android:textColor="@android:color/white"
+            android:id="@+id/lbl_account"
+            android:text="Account Balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/coin"
+            android:layout_below="@id/lbl_account"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/coin"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+        <TextView
+            android:textColor="@android:color/white"
+            android:id="@+id/balance"
+            android:layout_below="@+id/lbl_account"
+            android:layout_marginLeft="40dp"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/open_wallet"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_baseline_navigate_next_24"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/open_login_rl"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/open_wallet_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView android:textColor="@android:color/white"
+            android:id="@+id/lbl_login"
+            android:layout_centerVertical="true"
+            android:text="LOGIN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_baseline_navigate_next_24"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/open_image_rl"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/open_videos_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView android:textColor="@android:color/white"
+            android:layout_centerVertical="true"
+            android:text="IMAGES"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_baseline_navigate_next_24"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/open_message_rl"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/open_image_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView android:textColor="@android:color/white"
+            android:layout_centerVertical="true"
+            android:text="CHAT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_baseline_navigate_next_24"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/open_wallet1_rl"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/open_message_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView android:textColor="@android:color/white"
+            android:layout_centerVertical="true"
+            android:text="WALLET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_baseline_navigate_next_24"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/open_forget_pass_rl"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/open_wallet1_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView android:textColor="@android:color/white"
+            android:layout_centerVertical="true"
+            android:text="Forgot Password?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_baseline_navigate_next_24"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/open_videos_rl"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/open_login_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView android:textColor="@android:color/white"
+            android:layout_centerVertical="true"
+            android:text="VIDEOS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_baseline_navigate_next_24"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/logout_rl"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/open_forget_pass_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView android:textColor="@android:color/white"
+            android:layout_centerVertical="true"
+            android:text="LOGOUT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_baseline_navigate_next_24"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+    </RelativeLayout>
+</RelativeLayout>

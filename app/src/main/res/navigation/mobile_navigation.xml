@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_photo"
+        android:name="com.saud.celebrityapp.ui.photos.PhotosFragment"
+        android:label="@string/title_photos"
+        tools:layout="@layout/fragment_photos" >
+        <action
+            android:id="@+id/action_navigation_photo_pop"
+            app:popUpTo="@id/navigation_photo"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_navigation_photo_to_navigation_videos"
+            app:popUpTo="@id/navigation_videos" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_videos"
+        android:name="com.saud.celebrityapp.ui.videos.VideosFragment"
+        android:label="@string/title_videos"
+        tools:layout="@layout/fragment_videos" >
+        <action
+            android:id="@+id/action_navigation_videos_to_navigation_wallet"
+            app:popUpTo="@id/navigation_wallet" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_wallet"
+        android:name="com.saud.celebrityapp.ui.Wallet.payments.WalletFragment"
+        android:label="@string/title_wallet"
+        tools:layout="@layout/fragment_wallet" >
+        <action
+            android:id="@+id/action_navigation_wallet_to_navigation_messages"
+            app:popUpTo="@id/navigation_messages" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_messages"
+        android:name="com.saud.celebrityapp.ui.messages.MessagesFragment"
+        android:label="@string/title_messages"
+        tools:layout="@layout/fragment_messages" />
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.saud.celebrityapp.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_photo"
+            app:popUpTo="@id/navigation_photo" />
+    </fragment>
+
+</navigation>

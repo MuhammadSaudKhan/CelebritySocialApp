@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+    <item
+        android:id="@+id/navigation_home"
+        android:menuCategory="secondary"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+    <item
+        android:id="@+id/navigation_photo"
+        android:menuCategory="secondary"
+        android:icon="@drawable/gallery"
+        android:title="@string/title_photos" />
+
+    <item
+        android:id="@+id/navigation_videos"
+        android:menuCategory="secondary"
+        android:icon="@drawable/videocamera"
+        android:title="@string/title_videos" />
+    <item
+        android:id="@+id/navigation_wallet"
+        android:menuCategory="secondary"
+        android:icon="@drawable/wallet"
+        android:title="@string/title_wallet" />
+    <item
+        android:id="@+id/navigation_messages"
+        android:menuCategory="secondary"
+        android:icon="@drawable/message"
+        android:title="@string/title_messages" />
+
+
+</menu>
